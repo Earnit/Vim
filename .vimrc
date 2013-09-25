@@ -2,6 +2,7 @@
 colorscheme hybrid
 set ignorecase
 set laststatus=2
+set mouse=a      "use mouse as a cursor  
 
 set tabstop=4    "size of a hard tabstop
 set shiftwidth=4 "size of an indent
