@@ -1,13 +1,17 @@
 "My own part of file
 colorscheme hybrid
+set ignorecase
+set laststatus=2
+
+set tabstop=4    "size of a hard tabstop
+set shiftwidth=4 "size of an indent
  
 "Pathogen plugin
-"Call pathogen#runtime_append_all_bundles()
-call pathogen#incubate()
+execute pathogen#infect()
  
 "NERDTree plugin
-autocmd VimEnter * NERDTree
-autocmd VimEnter * wincmd p
+autocmd VimEnter * NERDTree "autostart
+autocmd VimEnter * wincmd p "switch to text window
  
 " GUI is running or is about to start.
 if has("gui_running")
