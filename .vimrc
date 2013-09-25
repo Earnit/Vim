@@ -32,7 +32,7 @@ else
 endif
  
 "Taglist plugin
-let Tlist_Ctags_Cmd='"C:\Program Files (x86)\ctags\ctags.exe"'
+let Tlist_Enable_Fold_Column = 0
 let Tlist_Use_Right_Window   = 1
 let Tlist_Auto_Highlight_Tag = 1
 let Tlist_Exit_OnlyWindow = 1     " exit if taglist is last window open
