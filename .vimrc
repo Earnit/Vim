@@ -64,3 +64,5 @@ if has("win32")
   let Tlist_Ctags_Cmd='"C:\Program Files (x86)\ctags\ctags.exe"'
 endif
 autocmd VimEnter * TlistToggle
+
+" === Mark.vim === useful highlight
