@@ -1,4 +1,5 @@
-"My own part of file
+" === MYVIMRC =========================================================
+
 colorscheme hybrid
 set ignorecase
 set laststatus=2
@@ -6,14 +7,21 @@ set mouse=a      "use mouse as a cursor
 
 set tabstop=4    "size of a hard tabstop
 set shiftwidth=4 "size of an indent
+
+map <F4> :qa<CR>    "Quit by F12
+set cursorline       "Highlit cursorline
+set nobackup         "Don't create temporary files file.name~
  
-"Pathogen plugin
-execute pathogen#infect()
- 
-"NERDTree plugin
-autocmd VimEnter * NERDTree "autostart
-autocmd VimEnter * wincmd p "switch to text window
- 
+"Set Ctrl+S to save file in all modes
+nmap <c-s> :w<CR>
+vmap <c-s> <Esc><c-s>gv
+imap <c-s> <Esc><c-s>
+
+"nnoremap <Right> <C-w>l
+"nnoremap <Left> <C-w>h
+"nnoremap <Up> <C-w>k
+"nnoremap <Down> <C-w>j
+
 " GUI is running or is about to start.
 if has("gui_running")
   " Maximize gvim window.
@@ -31,28 +39,21 @@ else
     set columns=100
   endif
 endif
- 
-"Taglist plugin
-let Tlist_Enable_Fold_Column = 0
-let Tlist_Use_Right_Window   = 1
-let Tlist_Auto_Highlight_Tag = 1
+
+
+" === PLUGINS =========================================================
+
+" === Pathogen ===
+execute pathogen#infect()
+
+" === NERDTree ===
+autocmd VimEnter * NERDTree "autostart
+autocmd VimEnter * wincmd p "switch to text window
+
+" === Taglist ===
+let Tlist_Enable_Fold_Column = 0  " not display the Vim fold column in the taglist
+let Tlist_Use_Right_Window   = 1  " put plugin to right side
+let Tlist_Auto_Highlight_Tag = 1  " autohighlighting of the current tag name 
 let Tlist_Exit_OnlyWindow = 1     " exit if taglist is last window open
-let Tlist_Show_One_File = 1       " Only show tags for current buffer
+let Tlist_Show_One_File = 1       " only show tags for current buffer
 autocmd VimEnter * TlistToggle
- 
-map <F4> :qa<CR>    "Quit by F12
-set cursorline       "Highlit cursorline
-set nobackup         "Don't create temporary files file.name~
- 
-"Set Ctrl+S to save file in all modes
-nmap <c-s> :w<CR>
-vmap <c-s> <Esc><c-s>gv
-imap <c-s> <Esc><c-s>
- 
-"Indexer plugin
-let g:indexer_indexerListFilename = "c:\Program Files (x86)\Vim\_indexer_files"
- 
-"nnoremap <Right> <C-w>l
-"nnoremap <Left> <C-w>h
-"nnoremap <Up> <C-w>k
-"nnoremap <Down> <C-w>j
