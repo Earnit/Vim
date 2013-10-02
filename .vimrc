@@ -40,6 +40,10 @@ else
   endif
 endif
 
+if has("win32")
+  set viminfo+=n$VIMRUNTIME/
+endif
+
 
 " === PLUGINS =========================================================
 
@@ -56,4 +60,7 @@ let Tlist_Use_Right_Window   = 1  " put plugin to right side
 let Tlist_Auto_Highlight_Tag = 1  " autohighlighting of the current tag name 
 let Tlist_Exit_OnlyWindow = 1     " exit if taglist is last window open
 let Tlist_Show_One_File = 1       " only show tags for current buffer
+if has("win32")
+  let Tlist_Ctags_Cmd='"C:\Program Files (x86)\ctags\ctags.exe"'
+endif
 autocmd VimEnter * TlistToggle
