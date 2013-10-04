@@ -1,14 +1,15 @@
 " === MYVIMRC =========================================================
 
 colorscheme hybrid
-set ignorecase
+set ignorecase       "ignore case for searching
 set laststatus=2
-set mouse=a      "use mouse as a cursor  
+set mouse=a          "use mouse as a cursor  
 
-set tabstop=4    "size of a hard tabstop
-set shiftwidth=4 "size of an indent
+set tabstop=4        "size of a hard tabstop
+set shiftwidth=4     "size of an indent
 
-map <F4> :qa<CR>    "Quit by F12
+map <F8> :!ctags -R --c++-kinds=+p --fields=+iaS --extra=+q .<CR>
+map <F4> :qa<CR>     "Quit by F4
 set cursorline       "Highlit cursorline
 set nobackup         "Don't create temporary files file.name~
  
