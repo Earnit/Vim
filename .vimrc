@@ -67,4 +67,5 @@ if has("win32")
 endif
 autocmd VimEnter * TlistToggle
 
-" === Mark.vim === useful highlight
+" === Mark.vim ===
+" little script to highlight several words in different colors simultaneously
