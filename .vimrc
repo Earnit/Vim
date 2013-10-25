@@ -69,3 +69,6 @@ autocmd VimEnter * TlistToggle
 
 " === Mark.vim ===
 " little script to highlight several words in different colors simultaneously
+
+" === Ctrl-P ====
+" kien/ctrlp.vim · GitHub
