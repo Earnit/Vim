@@ -55,6 +55,8 @@ execute pathogen#infect()
 " === NERDTree ===
 autocmd VimEnter * NERDTree "autostart
 autocmd VimEnter * wincmd p "switch to text window
+nmap ,m :NERDTreeToggle<CR> "show/hide nerdtree
+nmap ,n :NERDTreeFind<CR>   "sync with editor
 
 " === Taglist ===
 let Tlist_Enable_Fold_Column = 0  " not display the Vim fold column in the taglist
