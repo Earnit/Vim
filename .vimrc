@@ -2,6 +2,7 @@
 
 colorscheme hybrid
 set ignorecase       "ignore case for searching
+set hlsearch         "highlight all search matches
 set laststatus=2
 set mouse=a          "use mouse as a cursor  
 
