@@ -8,6 +8,8 @@ set mouse=a          "use mouse as a cursor
 
 set tabstop=4        "size of a hard tabstop
 set shiftwidth=4     "size of an indent
+set autoindent       "copy the indentation from the previous line
+set expandtab        "insert 'softtabstop' amount of space characters
 set list listchars=tab:>-,trail:·,extends:> "highlight unwanted spaces
 
 set tags=./tags;     "search tag file recursively to the directory level above
