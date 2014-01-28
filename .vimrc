@@ -8,7 +8,7 @@ set mouse=a          "use mouse as a cursor
 
 set tabstop=4        "size of a hard tabstop
 set shiftwidth=4     "size of an indent
-set list listchars=tab:\|_,trail:· "highlight unwanted spaces
+set list listchars=tab:>-,trail:·,extends:> "highlight unwanted spaces
 
 set tags=./tags;     "search tag file recursively to the directory level above
 map <F8> :!ctags -R --c++-kinds=+p --fields=+iaS --extra=+q .<CR>
