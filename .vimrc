@@ -1,6 +1,8 @@
 " === MYVIMRC =========================================================
 
 colorscheme hybrid
+syntax on
+
 set ignorecase       "ignore case for searching
 set hlsearch         "highlight all search matches
 set laststatus=2
